@@ -1,0 +1,10 @@
+<%- include('header') -%>
+<%- include('nav') -%>
+<link rel="stylesheet" href="/css/styles.css">
+    <img style="height:36.4rem;width: 100%;" src="/uploads/<%= post.filename %>">
+    <h1 style="text-align:center;"><%= post.Title %></h1>
+    <p style="margin-left: 2rem;">Author: <%= post.Name %></p>
+    <p style="margin: 2rem 2rem 2rem 2rem;line-height: 2rem;"><%= post.Content %></p>
+<%- include('footer') -%>
+</body>
+</html>

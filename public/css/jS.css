@@ -1,0 +1,26 @@
+.tags{
+    font-size: large;
+    line-height: 2rem;
+}
+.container1{
+    display: inline-block;
+    position: absolute;
+    background-image: linear-gradient(to right,#75C2F6,#A1CCD1);
+    padding: 1rem;
+    height: 12rem;
+    width: 30rem;
+    line-height: 1.5rem;
+    border-radius: 2rem;
+    font-size: large;
+}
+.container2{
+    display: inline-block;
+    padding: 1rem;
+    position: absolute;
+    left: 35rem;
+}
+.vid{
+    height: 12rem;
+    width: 30rem;
+    border-radius: 2rem;
+}

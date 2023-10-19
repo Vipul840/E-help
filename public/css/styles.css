@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sacramento&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.back_img  {
+    /* background-image: url("img2.jpg"); */
+    background-repeat:no-repeat; 
+    background-size: 100% 600px;
+    height: 36.4rem;
+    width: 100%;
+  }
+
+.heading
+{
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top:12rem;
+  left: 3rem;
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lol
+{
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top:12rem;
+  right: 2rem;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.next_img
+{
+  /* background-image: url("img1.jpg"); */
+  background-repeat:no-repeat; 
+  background-size: 100% 600px;
+  height: 640px;
+  width: 100%;
+  opacity: 0.3;
+  
+}
+
+.frame1{
+
+  z-index: 1;
+  
+  position: absolute;
+  top: 50rem;
+  left: 15rem;
+  height: 200px;
+  width: 350px;
+}
+
+.frame2{
+
+  z-index: 1;
+  
+  position: absolute;
+  top: 65rem;
+  left: 15rem;
+  height: 200px;
+  width: 350px;
+}
+
+.frame3{
+
+  z-index: 1;
+  
+  position: absolute;
+  top: 50rem;
+  right: 15rem;
+  height: 200px;
+  width: 350px;
+}
+
+.frame4{
+
+  z-index: 1;
+  
+  position: absolute;
+  top: 65rem;
+  right: 15rem;
+  height: 200px;
+  width: 350px;
+}
+
+.videos
+{
+  
+  z-index: 1;
+  position: absolute;
+  top: 42rem ;
+  left: 13.5rem;
+  font-size: 4rem;
+  font-family: 'Lora', serif;
+  
+  color: #000000;
+}
+
+.h111{
+  font-size: 4rem;
+  font-family: 'Lora', serif;
+  text-align: center;
+}
+
+.h11{
+  font-size: 4rem;
+  font-family: 'Lora', serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+.pagination123 
+{
+  margin: 2rem;
+}
+
+.pagination123 a,.pagination123 a:hover {
+  padding: 3px 7px;
+  margin-left: 3px;
+  text-decoration: none
+}
+
+.pagination123 a {
+  font: 35px/1.5 Verdana;
+  border: 2px solid rgb(0, 0, 0);
+  color: #000000;
+  font-weight: 700
+}
+
+.pagination123 a:hover {
+  font: 35px/1.5 Verdana;
+  background-color: #e2d4d4;
+  color: #fff;
+  font-weight: 700;
+}
+
+table.alt tr:nth-child(odd) {
+  background-color: #c2bfbf
+}
+
+table.alt tr:nth-child(even) {
+  background-color: #FFEAEA
+}
+
+table.alt tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit
+}
+
+table.alt,table.alt td {
+  border: 1px solid #949393;
+  text-align: left
+}
+
+table.alt {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%
+}
+
+table.alt td {
+  padding: 8px;
+  vertical-align: top
+}
+
+table.alt th {
+  color: #000;
+  background-color: #908c8c;
+  font-size: 17px;
+  font-family: times new roman;
+  padding: 12px;
+  vertical-align: top;
+  text-align: left
+}
+

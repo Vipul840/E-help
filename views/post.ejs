@@ -1,0 +1,55 @@
+<%- include('header.ejs') -%>
+    <%- include('nav.ejs') -%>
+        <h1 style="text-align: center;">Trending Posts</h1>
+        <div class="post_container">
+            <% posts.forEach((element,index)=>{ %>
+                <div class="corousel corol" data-image-id="<%= index+1 %>">
+                    <img style="height: 8.5rem;width:14.4rem;" src="/uploads/<%= element.filename%>">
+                    <p style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;">
+                        <%= element.Title %>
+                    </p>
+                    <p style="margin-bottom: 1rem;font-size: smaller;"> Contributed by: <%= element.Name %>
+                    </p>
+                </div>
+                <% }); %>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <script>
+         
+            let el = document.querySelectorAll('.corousel');
+            el.forEach((element) => {
+            element.addEventListener('click', () => {
+            let imageId = element.getAttribute('data-image-id');
+            window.location.href = "/view_post/" + imageId;
+              
+                 });
+            });
+
+            let SlideIndex = 1;
+            showSlides(SlideIndex);
+            function plusSlides(n) {
+                showSlides(SlideIndex += n);
+            }
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("corousel");
+                //   let dots = document.getElementsByClassName("dot");
+                if (n > slides.length - 3) { SlideIndex = 1 }
+                if (n < 1) { SlideIndex = slides.length - 3 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                for (let i = SlideIndex - 1; i < (3 + SlideIndex); i++) {
+                    console.log(i);
+                    slides[i].style.display = "block";
+                }
+            }
+
+        </script>
+        <%- include('footer.ejs') -%>
+            </body>
+
+            </html>

@@ -1,0 +1,29 @@
+<%- include('header') -%>
+<%- include('nav') -%>
+<div class="compose_out">
+<div class="compose_div">
+    <h1 style="text-align: center;font-weight: bold;">Compose</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Title</label>
+        <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Give Title for your Article">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Give Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+       
+        <div class="mb-3">
+        <label for="file" style="color: rgb(154, 177, 187);" >Upload Image</label>
+        <input type="file" name="file"  id="myfile"><br>
+        <button type="submit" class="btn btn-primary" style="width: 9rem;">Publish</button> 
+        </div> 
+    </form>  
+  </div>
+  </div>
+</body>
+</html>
